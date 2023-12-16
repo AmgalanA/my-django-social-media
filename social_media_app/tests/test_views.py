@@ -89,7 +89,7 @@ class TestView(TestCase):
         self.assertEquals(str(messages[0]), 'Username Already Taken')
 
     def test_correct_template_signup_GET(self):
-        response = self.client.get('/signup')
+        response = self.client.get('/signup') 
 
         self.assertEquals(response.status_code, 200)
 
