@@ -1,0 +1,859 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>views</title>
+    <meta name="generator" content="pydoctor 23.9.1"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          views <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="search-help-button" title="Help" onclick="toggleSearchHelpText()"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="search-results-container" style="display: none;">
+        
+        <div id="search-buttons">
+          <span class="label label-default" id="search-docstrings-button">
+          <label class="checkbox-inline">
+            <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+              search in docstrings
+            </input>
+          </label>
+          </span>
+          
+        </div>
+        
+        <noscript>
+            <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+        </noscript>
+
+        <div class="hint" id="search-help-box">
+          <p class="rst-last">
+      
+            Search bar offers the following options:
+            <ul>   
+                <li>
+                  <strong>Term presence.</strong> The below example searches for documents that 
+                    must contain “foo”, might contain “bar” and must not contain “baz”: <code>+foo bar -baz</code>
+                </li> 
+
+                <li>
+                  <strong>Wildcards.</strong> The below example searches for documents with words beginning with “foo”: <code>foo*</code>
+                </li> 
+
+                <li>
+                  <strong>Search in specific fields.</strong> The following search matches all objects 
+                  in "twisted.mail" that matches “search”: <code>+qname:twisted.mail.* +search</code>
+
+                  <p>
+                    Possible fields: 'name', 'qname' (fully qualified name), 'docstring', and 'kind'.
+                    Last two fields are only applicable if "search in docstrings" is enabled.
+                  </p>
+                </li>
+
+                <li>
+                  <strong>Fuzzy matches.</strong> The following search matches all documents 
+                  that have a word within 1 edit distance of “foo”: <code>foo~1</code>
+                </li>
+            </ul>
+
+          </p>
+        </div>
+
+        <div id="search-status"> </div>
+
+        <div class="warning" id="search-warn-box" style="display: none;">
+          <p class="rst-last"><span id="search-warn"></span></p>
+        </div>
+
+        <table id="search-results">
+          <!-- Filled dynamically by JS -->
+        </table>
+        
+        <div style="margin-top: 8px;">
+          <p>Results provided by <a href="https://lunrjs.com">Lunr.js</a></p>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+</nav>
+    
+    <div class="container-fluid">
+
+      <!-- Side navigation -->
+      <div class="sidebarcontainer" style="display: none;">
+        
+        <div class="sidebar"><nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code class="thisobject"><a href="index.html" class="internal-link" title="This module">views</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        <div class="childrenKindTitle">Functions</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#delete_post" class="internal-link" title="views.delete_post">delete<wbr></wbr>_post</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#follow" class="internal-link" title="views.follow">follow</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#index" class="internal-link" title="views.index">index</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#like_post" class="internal-link" title="views.like_post">like<wbr></wbr>_post</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#logout" class="internal-link" title="views.logout">logout</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#profile" class="internal-link" title="views.profile">profile</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#search" class="internal-link" title="views.search">search</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#settings" class="internal-link" title="views.settings">settings</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#signin" class="internal-link" title="views.signin">signin</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#signup" class="internal-link" title="views.signup">signup</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#upload" class="internal-link" title="views.upload">upload</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        
+         
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        </div>
+        <div id="collapseSideBar">
+          <a class="btn btn-link" onclick="toggleSideBarCollapse()" title="Toggle Sidebar Collapse">
+          </a>
+        </div> 
+        <script src="sidebartoggle.js" type="text/javascript"></script>
+       
+      </div>
+
+      <div id="main" class="">
+        
+
+        
+
+        <div class="page-header">
+          <h1 class="module"><code><code><a href="index.html" class="internal-link">views</a></code></code></h1>
+          <div id="showPrivate">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          module documentation
+        </div>
+
+        <div class="extrasDocstring">
+          
+          <p></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p class="undocumented">Undocumented</p></div>
+        </div>
+
+        <div id="splitTables">
+          <table class="children sortable" id="id1">
+  
+  
+  <tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#delete_post" class="internal-link" title="views.delete_post">delete<wbr></wbr>_post</a></code></td>
+    <td>Deletes post</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#follow" class="internal-link" title="views.follow">follow</a></code></td>
+    <td>Implements follow functionality</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#index" class="internal-link" title="views.index">index</a></code></td>
+    <td>Based on info of logged in user finds its following users, posts of these users</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#like_post" class="internal-link" title="views.like_post">like<wbr></wbr>_post</a></code></td>
+    <td>Implements like post functionality. Increments count of likes if user has not liked the post, and decrements if user has.</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#logout" class="internal-link" title="views.logout">logout</a></code></td>
+    <td>} :redirects: /signin :raises BadRequest or Unauthorized</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#profile" class="internal-link" title="views.profile">profile</a></code></td>
+    <td>Returns profile with specific username of logged in user, returns all posts of that user, and who is following him and who is followed by him</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#search" class="internal-link" title="views.search">search</a></code></td>
+    <td>Implements search user by username functionality</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#settings" class="internal-link" title="views.settings">settings</a></code></td>
+    <td>If user wants to get settings page, it redirects to /settings page with info about logged in profile If user wants to post settings page, it gets all info from submitted form and changes info in profile model...</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#signin" class="internal-link" title="views.signin">signin</a></code></td>
+    <td>} :renders: signin.html template :raises BadRequest or Unauthorized</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#signup" class="internal-link" title="views.signup">signup</a></code></td>
+    <td>Implements sign up functionality</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#upload" class="internal-link" title="views.upload">upload</a></code></td>
+    <td>Uploads new post</td>
+  </tr>
+</table>
+          
+
+            
+        </div>
+
+        <div id="childList">
+          <div class="basefunction">
+  
+  
+  <a name="views.delete_post">
+    
+  </a>
+  <a name="delete_post">
+    
+  </a>
+  <div class="functionHeader">
+    
+    @login_required(<wbr></wbr>login_url=<span class="rst-variable-quote">'</span><span class="rst-variable-string">signin</span><span class="rst-variable-quote">'</span>)<br />
+    <span class="py-keyword">def</span> <span class="py-defname">delete_post</span><span class="function-signature">(request)</span>:
+    
+    <a class="headerLink" href="#delete_post" title="views.delete_post">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Deletes post</p>
+<p>}
+:redirects: '/'
+:raises BadRequest or Unauthorized</p>
+<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">request:</span><p>{
+POST: {</p>
+<blockquote>
+post_id: string</blockquote>
+<p>}</p>
+</td><td class="fieldArgDesc">contains id of post with key 'post_id'</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="views.follow">
+    
+  </a>
+  <a name="follow">
+    
+  </a>
+  <div class="functionHeader">
+    
+    @login_required(<wbr></wbr>login_url=<span class="rst-variable-quote">'</span><span class="rst-variable-string">signin</span><span class="rst-variable-quote">'</span>)<br />
+    <span class="py-keyword">def</span> <span class="py-defname">follow</span><span class="function-signature">(request)</span>:
+    
+    <a class="headerLink" href="#follow" title="views.follow">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Implements follow functionality</p>
+<p>}
+:redirects:</p>
+<blockquote>
+<ol class="rst-arabic simple">
+<li>to profile + username page if request.method == "POST"</li>
+<li>to / if request.method == "GET"</li>
+</ol>
+</blockquote>
+<p>:raises BadRequest or Unauthorized</p>
+<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">request:</span><p>{
+POST: {</p>
+<blockquote>
+user: string;
+follower: string;</blockquote>
+<p>}</p>
+</td><td class="fieldArgDesc">contains info  about logged in user,
+and user he or she wants to follow</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="views.index">
+    
+  </a>
+  <a name="index">
+    
+  </a>
+  <div class="functionHeader">
+    
+    @login_required(<wbr></wbr>login_url=<span class="rst-variable-quote">'</span><span class="rst-variable-string">signin</span><span class="rst-variable-quote">'</span>)<br />
+    <span class="py-keyword">def</span> <span class="py-defname">index</span><span class="function-signature">(request)</span>:
+    
+    <a class="headerLink" href="#index" title="views.index">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Based on info of logged in user finds its following users, posts of these users</p>
+<p>}
+:return: renders index.html template with info of object: {</p>
+<blockquote>
+user_profile: Profile of logged in user,
+posts: array of posts of subscripted profiles,
+suggestions_username_profile_list: profiles, which are not followed by current user,</blockquote>
+<p>}
+:type return: {</p>
+<blockquote>
+user_profile: ProfileModel;
+posts: PostModel[];
+suggestions_username_profile_list: Profile[]</blockquote>
+<p>}
+:raises Unauthorized</p>
+<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">request:</span><p>{
+user: {</p>
+<blockquote>
+username: string</blockquote>
+<p>}</p>
+</td><td class="fieldArgDesc">contains info  about logged in user</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="views.like_post">
+    
+  </a>
+  <a name="like_post">
+    
+  </a>
+  <div class="functionHeader">
+    
+    @login_required(<wbr></wbr>login_url=<span class="rst-variable-quote">'</span><span class="rst-variable-string">signin</span><span class="rst-variable-quote">'</span>)<br />
+    <span class="py-keyword">def</span> <span class="py-defname">like_post</span><span class="function-signature">(request)</span>:
+    
+    <a class="headerLink" href="#like_post" title="views.like_post">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Implements like post functionality. Increments count of likes if user has not liked the post,
+and decrements if user has.</p>
+<p>}
+:redirects: to '/' with no properties
+:raises BadRequest or Unauthorized</p>
+<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">request:</span><p>{
+user: {</p>
+<blockquote>
+<p>username: string,
+GET: {</p>
+<blockquote>
+post_id: string</blockquote>
+<p>}</p>
+</blockquote>
+<p>}</p>
+</td><td class="fieldArgDesc">contains info  about logged in user
+ans GET param key with property 'post_id'</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="views.logout">
+    
+  </a>
+  <a name="logout">
+    
+  </a>
+  <div class="functionHeader">
+    
+    @login_required(<wbr></wbr>login_url=<span class="rst-variable-quote">'</span><span class="rst-variable-string">signin</span><span class="rst-variable-quote">'</span>)<br />
+    <span class="py-keyword">def</span> <span class="py-defname">logout</span><span class="function-signature">(request)</span>:
+    
+    <a class="headerLink" href="#logout" title="views.logout">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>}
+:redirects: /signin
+:raises BadRequest or Unauthorized</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">request:</span><p>{
+user: {</p>
+<blockquote>
+username: string</blockquote>
+<p>}</p>
+</td><td class="fieldArgDesc">contains info  about logged in user</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="views.profile">
+    
+  </a>
+  <a name="profile">
+    
+  </a>
+  <div class="functionHeader">
+    
+    @login_required(<wbr></wbr>login_url=<span class="rst-variable-quote">'</span><span class="rst-variable-string">signin</span><span class="rst-variable-quote">'</span>)<br />
+    <span class="py-keyword">def</span> <span class="py-defname">profile</span><span class="function-signature">(request, pk)</span>:
+    
+    <a class="headerLink" href="#profile" title="views.profile">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Returns profile with specific username of logged in user,
+returns all posts of that user,
+and who is following him and who is followed by him</p>
+<p>}
+:renders: profile.html template with info of object: {</p>
+<blockquote>
+user_object: current user;
+user_profile: profile with username;
+user_posts: posts of user;
+user_post_length: length of posts;
+button_text: text for subscribe button;
+user_followers: amount of followers;
+user_following: amount of following user;</blockquote>
+<p>}
+:type renders: {</p>
+<blockquote>
+user_object: UserModel;
+user_profile: ProfileModel;
+user_posts: PostModel[];
+user_post_length: number;
+button_text: string;
+user_followers: number;
+user_following: number;</blockquote>
+<p>}
+:raises BadRequest or Unauthorized</p>
+<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">request:</span><p>{
+user: {</p>
+<blockquote>
+username: string</blockquote>
+<p>},
+pk: string</p>
+</td><td class="fieldArgDesc">contains user object with username;
+pk: name of logged in user</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">pk</span></td><td class="fieldArgDesc"><span class="undocumented">Undocumented</span></td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="views.search">
+    
+  </a>
+  <a name="search">
+    
+  </a>
+  <div class="functionHeader">
+    
+    @login_required(<wbr></wbr>login_url=<span class="rst-variable-quote">'</span><span class="rst-variable-string">signin</span><span class="rst-variable-quote">'</span>)<br />
+    <span class="py-keyword">def</span> <span class="py-defname">search</span><span class="function-signature">(request)</span>:
+    
+    <a class="headerLink" href="#search" title="views.search">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Implements search user by username functionality</p>
+<p>}
+:renders: search.html template with info of object: {</p>
+<blockquote>
+user_profile: Profile of logged in user,
+username_profile_list: list of profiles whose usernames contains search query</blockquote>
+<p>}
+:type renders: {</p>
+<blockquote>
+user_profile: ProfileModel;
+username_profile_list: ProfileModel[];</blockquote>
+<p>}
+:raises BadRequest or Unauthorized</p>
+<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">request:</span><p>{
+user: {</p>
+<blockquote>
+username: string</blockquote>
+<p>}</p>
+</td><td class="fieldArgDesc">contains dictionary user with username inside,
+and object POST with key 'username' which is a search query</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="views.settings">
+    
+  </a>
+  <a name="settings">
+    
+  </a>
+  <div class="functionHeader">
+    
+    @login_required(<wbr></wbr>login_url=<span class="rst-variable-quote">'</span><span class="rst-variable-string">signin</span><span class="rst-variable-quote">'</span>)<br />
+    <span class="py-keyword">def</span> <span class="py-defname">settings</span><span class="function-signature">(request)</span>:
+    
+    <a class="headerLink" href="#settings" title="views.settings">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>If user wants to get settings page, it redirects to /settings page with info about logged in profile
+If user wants to post settings page, it gets all info from submitted form and changes info in profile model</p>
+<p>}
+:renders: settings.html template with info of object: {</p>
+<blockquote>
+user_profile: Profile of logged in user,</blockquote>
+<p>}
+:type renders: {</p>
+<blockquote>
+user_profile: ProfileModel;</blockquote>
+<p>}
+:raises BadRequest or Unauthorized</p>
+<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">request:</span>{
+user: string</td><td class="fieldArgDesc">contains username of logged in user</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="views.signin">
+    
+  </a>
+  <a name="signin">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">signin</span><span class="function-signature">(request)</span>:
+    
+    <a class="headerLink" href="#signin" title="views.signin">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>}
+:renders: signin.html template
+:raises BadRequest or Unauthorized</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">request:</span><p>{
+POST: {</p>
+<blockquote>
+username: name data,
+password: password data</blockquote>
+<p>}</p>
+</td><td class="fieldArgDesc">contains info  about username and password, user has sent through form submition</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="views.signup">
+    
+  </a>
+  <a name="signup">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">signup</span><span class="function-signature">(request)</span>:
+    
+    <a class="headerLink" href="#signup" title="views.signup">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Implements sign up functionality</p>
+<p>}
+:type request: {</p>
+<blockquote>
+<dl class="rst-docutils">
+<dt>POST: {</dt>
+<dd>username: name from form data;
+email: email from form data;
+password: password from form data;
+password2: second password from form data;</dd>
+</dl>
+<p>}</p>
+</blockquote>
+<p>}
+:renders: signup.html template
+:raises BadRequest with messages Email Already Taken, Username Already Taken, Passwords not matching or Unauthorized</p>
+<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">request</span></td><td class="fieldArgDesc"><p>{
+POST: {</p>
+<blockquote>
+username: name from form data;
+email: email from form data;
+password: password from form data;
+password2: second password from form data;</blockquote>
+<p>}</p>
+</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="views.upload">
+    
+  </a>
+  <a name="upload">
+    
+  </a>
+  <div class="functionHeader">
+    
+    @login_required(<wbr></wbr>login_url=<span class="rst-variable-quote">'</span><span class="rst-variable-string">signin</span><span class="rst-variable-quote">'</span>)<br />
+    <span class="py-keyword">def</span> <span class="py-defname">upload</span><span class="function-signature">(request)</span>:
+    
+    <a class="headerLink" href="#upload" title="views.upload">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Uploads new post</p>
+<p>}
+:returns: redirects to / path with info of object: {</p>
+<blockquote>
+user_profile: Profile of logged in user,
+posts: array of posts of subscripted profiles,
+suggestions_username_profile_list: profiles, which are not followed by current user,</blockquote>
+<p>}
+:rtype: -
+:raises Unauthorized</p>
+<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">request:</span><p>{
+user: {</p>
+<blockquote>
+username: string</blockquote>
+<p>},
+FILES: FILE[],
+POST: [caption]: string[]</p>
+</td><td class="fieldArgDesc">contains info  about logged in user</td></tr></table></div>
+  </div>
+</div>
+        </div>
+      
+      </div>
+    </div>
+
+    <footer class="navbar navbar-default">
+
+  
+  <div class="container">
+    <a href="index.html">API Documentation</a> for views,
+  generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+    23.9.1 at 2023-12-15 13:44:30.
+  </div>
+
+  <!-- Search related scripts needs to be loaded at the end of HTML 
+    parsing not to introduce overhead and display HTML data asap -->
+  <script src="ajax.js" type="text/javascript"></script>
+  <script src="searchlib.js" type="text/javascript"></script>
+  <script src="search.js" type="text/javascript"></script>
+
+</footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>
