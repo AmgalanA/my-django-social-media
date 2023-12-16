@@ -226,8 +226,6 @@ class TestView(TestCase):
             'post_id': post.id
         })
 
-        print('RESPONSE: ', delete_post_response)
-
     def test_follow_user_POST(self):
         self.test_signup_POST()
         self.test_signup_POST('AnotherUser', 'anotheruser@gmail.com')
